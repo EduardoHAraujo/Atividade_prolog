@@ -19,4 +19,5 @@ animal(veado).
 animal(lince).
 planta(grama).
 planta(alga).
+presa(X) :- come(Y, X), animal(X).
 predador(X) :- come(X, Y), animal(Y).
